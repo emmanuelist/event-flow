@@ -1,0 +1,30 @@
+[project]
+name = "event-flow-smart-contract"
+description = "EventFlow - Real-Time Stacks Blockchain Event Platform Smart Contracts"
+authors = ["EventFlow Team"]
+telemetry = true
+cache_dir = "./.cache"
+
+[contracts.workflow-registry]
+path = "contracts/workflow-registry.clar"
+epoch = "3.0"
+
+[contracts.event-processor]
+path = "contracts/event-processor.clar"
+epoch = "3.0"
+
+[contracts.subscription-manager]
+path = "contracts/subscription-manager.clar"
+epoch = "3.0"
+
+[repl.analysis]
+passes = ["check_checker"]
+check_checker = { trusted_sender = false, trusted_caller = false, callee_filter = false }
+
+# Check-checker settings:
+# trusted_sender: if true, inputs are trusted after tx_sender has been checked.
+# trusted_caller: if true, inputs are trusted after contract-caller has been checked.
+# callee_filter: if true, untrusted data may be passed into a private function without a
+# warning, if it gets checked inside. This check will also propagate up to the
+# caller.
+# More informations: https://www.hiro.so/blog/new-safety-checks-in-clarinet
