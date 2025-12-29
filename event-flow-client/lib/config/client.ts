@@ -3,7 +3,7 @@ import z from "zod";
 export const envSchema = z.object({
   NEXT_PUBLIC_APP_NAME: z.string().default("EventFlow"),
   NEXT_PUBLIC_STACKS_NETWORK: z.enum(["mainnet", "testnet", "devnet"]).default("mainnet"),
-  NEXT_PUBLIC_CONTRACT_ADDRESS: z.string().default("SPVQ61FEWR6M4HVAT3BNE07D4BNW6A1C2ACCNQ6F"),
+  NEXT_PUBLIC_CONTRACT_ADDRESS: z.string().default("SPHB047A30W99178TR7KE0784C2GV22070JTKX8"),
   NEXT_PUBLIC_WORKFLOW_REGISTRY: z.string().default("workflow-registry"),
   NEXT_PUBLIC_EVENT_PROCESSOR: z.string().default("event-processor"),
   NEXT_PUBLIC_SUBSCRIPTION_MANAGER: z.string().default("subscription-manager"),

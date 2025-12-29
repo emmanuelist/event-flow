@@ -48,7 +48,7 @@ export default function Home() {
       const mockWorkflows: Workflow[] = [
         {
           id: 1,
-          owner: "SPVQ61FEWR6M4HVAT3BNE07D4BNW6A1C2ACCNQ6F",
+          owner: "SPHB047A30W99178TR7KE0784C2GV22070JTKX8",
           name: "Token Transfer Monitor",
           description:
             "Automatically monitor and react to STX token transfers above 1000 STX",
@@ -61,7 +61,7 @@ export default function Home() {
         },
         {
           id: 2,
-          owner: "SPVQ61FEWR6M4HVAT3BNE07D4BNW6A1C2ACCNQ6F",
+          owner: "SPHB047A30W99178TR7KE0784C2GV22070JTKX8",
           name: "NFT Sales Tracker",
           description: "Track NFT sales and send notifications to Discord",
           category: "NFT",
@@ -73,7 +73,7 @@ export default function Home() {
         },
         {
           id: 3,
-          owner: "SPVQ61FEWR6M4HVAT3BNE07D4BNW6A1C2ACCNQ6F",
+          owner: "SPHB047A30W99178TR7KE0784C2GV22070JTKX8",
           name: "Contract Deploy Alert",
           description: "Get notified when new contracts are deployed",
           category: "Development",
@@ -379,7 +379,7 @@ export default function Home() {
           <p>© 2025 EventFlow. Built on Stacks blockchain.</p>
           <p className="mt-2">
             Contracts deployed on mainnet:{" "}
-            <code className="text-xs">SPVQ61FEWR6M4HVAT3BNE07D4BNW6A1C2ACCNQ6F</code>
+            <code className="text-xs">SPHB047A30W99178TR7KE0784C2GV22070JTKX8</code>
           </p>
         </div>
       </footer>

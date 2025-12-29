@@ -1,0 +1,32 @@
+---
+id: 0
+name: Mainnet deployment
+network: mainnet
+stacks-node: "https://api.hiro.so"
+bitcoin-node: "http://blockstack:blockstacksystem@bitcoin.blockstack.com:8332"
+plan:
+  batches:
+    - id: 0
+      transactions:
+        - contract-publish:
+            contract-name: event-processor
+            expected-sender: SPHB047A30W99178TR7KE0784C2GV22070JTKX8
+            cost: 132620
+            path: contracts/event-processor.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: subscription-manager
+            expected-sender: SPHB047A30W99178TR7KE0784C2GV22070JTKX8
+            cost: 181640
+            path: contracts/subscription-manager.clar
+            anchor-block-only: true
+            clarity-version: 3
+        - contract-publish:
+            contract-name: workflow-registry
+            expected-sender: SPHB047A30W99178TR7KE0784C2GV22070JTKX8
+            cost: 119700
+            path: contracts/workflow-registry.clar
+            anchor-block-only: true
+            clarity-version: 3
+      epoch: "3.0"
