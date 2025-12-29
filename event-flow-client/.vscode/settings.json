@@ -1,0 +1,10 @@
+{
+  "files.eol": "\n",
+  "editor.codeActionsOnSave": {
+    "source.organizeImports.biome": "explicit",
+    "source.fixAll.biome": "always"
+  },
+  "files.associations": {
+    "*.css": "tailwindcss"
+  }
+}
